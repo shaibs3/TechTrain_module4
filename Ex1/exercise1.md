@@ -1,5 +1,10 @@
 ## 1. **Create a Hello World Application in a Pod**
 
+**setup**
+   ```bash
+   kind create cluster
+   ```
+
 - **Task**: Create a pod that runs a simple "Hello World" application. The pod should output "Hello World" every 5 seconds.
 1.  **Apply the manifest**  
     ```bash

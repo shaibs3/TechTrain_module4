@@ -21,5 +21,5 @@
    ```
 5. **Cleanup**
    ```bash
-      kubectl delete -f ./exercise1.md
+      kubectl delete -f ./exercise2.md
    ```
