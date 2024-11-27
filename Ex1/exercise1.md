@@ -2,15 +2,16 @@
 
 **setup**
    ```bash
+   git clone https://github.com/shaibs3/TechTrain_module4.git
    kind create cluster
    ```
 
 - **Task**: Create a pod that runs a simple "Hello World" application. The pod should output "Hello World" every 5 seconds.
 1.  **Apply the manifest**  
     ```bash
-   cd ./Ex1
-   kubectl apply -f ./exercise1.md
-   ```
+    cd ./Ex1
+    kubectl apply -f ./exercise1.md
+    ```
 2. **Find the pod name**
    ```bash
    kubectl get pods 

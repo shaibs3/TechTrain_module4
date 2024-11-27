@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-service
+spec:
+  selector:
+    app: hello-world  # This matches the label of the pods created by the deployment
+  ports:
+    - protocol: TCP
+      port: 80      # Port on which the service will be exposed
+      targetPort: 80 # Port on which the container is listening
+  type: ClusterIP  # This is the default type, exposing the service within the cluster
