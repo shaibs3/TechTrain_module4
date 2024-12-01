@@ -1,6 +1,6 @@
 ## **Fix a failed running pod**
 
-- **Task**: Create a pod
+- **Task**: Create a failed  pod
 
 1. **Apply the manifest**
    ```bash

@@ -1,5 +1,7 @@
 ## **Create a deployment **
 
+- **Task**: Create a deployment
+
 1. **Apply the manifest**
    ```bash
    cd ../Ex5

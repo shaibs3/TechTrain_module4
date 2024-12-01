@@ -1,6 +1,6 @@
 ## **Run as non root inside the container**
 
-- **Task**: Create a pod
+- **Task**: Create a non root container
 
 1. **Apply the manifest**
    ```bash
