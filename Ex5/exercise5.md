@@ -16,13 +16,13 @@
    ```bash
    kubectl get pods 
    ```
-4. **Describe the deployment**
+4. **Describe the deployment and view the events section at the bottom. This section shows you the actions done by the deployment**
    ```bash
       kubectl describe deployment hello-world-deployment
    ```
-5. **Scale out the deployment**
+5. **Scale out the deployment to 5 replicas by editing the relevant field in the exercise5.yaml file**
    ```bash
-    kubectl scale deployment hello-world-deployment --replicas=5
+    <Run the kubectl apply command to apply the change>
    ```
 6. **Check the pods status and verify that there are indeed 5 pods for the deployment**
 7. **Describe the deployment again and verify the scaled event is in the event section**
