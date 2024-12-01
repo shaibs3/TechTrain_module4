@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: debug-app
+  name: user-test-pod
 spec:
   containers:
-    - name: debug-app
-      image: debug-app:latest
-      imagePullPolicy: Never
-      env:
-        - name: APP_PORT
-          value: "80"
+    - name: user-test-container
+      image: ubuntu:20.04
+      command: ["sleep", "3600"]
+      securityContext:
+        runAsUser: 1000

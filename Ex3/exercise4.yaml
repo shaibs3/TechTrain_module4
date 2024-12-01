@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-app
+spec:
+  containers:
+    - name: debug-app
+      image: debug-app:latest
+      imagePullPolicy: Never
+      env:
+        - name: APP_PORT
+          value: "80"

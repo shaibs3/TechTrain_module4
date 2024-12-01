@@ -1,32 +1,30 @@
-## 2. **Create a Failed Pod on Purpose**
+## **Fix a failed running pod**
 
-- **Task**: Create a deployment 
+- **Task**: Create a pod
 
 1. **Apply the manifest**
    ```bash
-   cd ./Ex3
-   kubectl apply -f ./exercise3.md
-   ```
-2. **Check the status of the deployment**
-   ```bash
-   kubectl get deployment hello-world-deployment
+   cd ./TechTrain_module4/Ex4
+   docker build . -t debug-app:latest -f ./App/Dockerfile
+   kind load docker-image debug-app:latest
+   kubectl apply -f ./exercise4.yaml
    ```
 
-3. **Check the pods status, how many pods are there?**
+2. **Check the pod's status, is it in a running state?**
    ```bash
    kubectl get pods 
    ```
-4. **Describe the deployment**
+3. **View the pod's logs**
    ```bash
-      kubectl describe deployment hello-world-deployment
+    kubectl logs debug-app
    ```
-5. **Scale out the deployment**
+4. **Based on the pod's logs, try to fix the error by editing the exercise4.yaml file. after editing the file run the following:**
    ```bash
-    kubectl scale deployment hello-world-deployment --replicas=5
+    kubectl apply -f ./exercise4.yaml --force
    ```
-6. **Check the pods status and verify that there are indeed 5 pods for the deployment**
-7. **Describe the deployment again and verify the scaled event is in the event section**
-7. **Cleanup**
+5. **Check the pod's status again (same command as in bullet 2) and verify that the pod is running**
+6. **Check the po's logs and verify the output is now valid**
+5. **Cleanup**
    ```bash
-      kubectl delete -f ./exercise3.md
+      kubectl delete -f ./exercise4.yaml
    ```
