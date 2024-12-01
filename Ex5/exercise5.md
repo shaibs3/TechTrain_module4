@@ -5,7 +5,7 @@
 1. **Apply the manifest**
    ```bash
    cd ../Ex5
-   kubectl apply -f ./exercise5.md
+   kubectl apply -f ./exercise5.yaml
    ```
 2. **Check the status of the deployment**
    ```bash
