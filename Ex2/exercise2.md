@@ -4,8 +4,8 @@
 
 1. **Apply the manifest**
    ```bash
-   cd ./Ex2
-   kubectl apply -f ./exercise2.md
+   cd ../Ex2
+   kubectl apply -f ./exercise2.yaml
    ```
 2. **Check the pod status**
    ```bash
@@ -17,7 +17,7 @@
    ```
 4. Fix the issue by fixing the yaml file and running:
    ```bash
-      kubectl apply -f ./exercise2.md
+      kubectl apply -f ./exercise2.yaml
    ```
 5. **Cleanup**
    ```bash

@@ -9,8 +9,9 @@
 - **Task**: Create a pod that runs a simple "Hello World" application. The pod should output "Hello World" every 5 seconds.
 1.  **Apply the manifest**  
     ```bash
+    cd ./TechTrain_module4
     cd ./Ex1
-    kubectl apply -f ./exercise1.md
+    kubectl apply -f ./exercise1.yaml
     ```
 2. **Find the pod name**
    ```bash
