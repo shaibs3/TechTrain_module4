@@ -16,10 +16,10 @@
    ```bash
     < find the command for checking the user id>
    ```
-4. ** What is the security concern related to the output of the previous command ?**
-5. ** Fix the security volnurability found in previous section by editing exercise5.yaml and reapplying the manifest:
+4. **What is the security concern related to the output of the previous command ?**
+5. **Fix the security volnurability found in previous section by editing exercise5.yaml and reapplying the manifest:**
    ```bash
-   kubectl apply -f ./exercise4.yaml
+   kubectl apply -f ./exercise4.yaml --force
    ```
 6. ** Exec again to the container and verify that the issue is now solved **
 7. **Cleanup**

@@ -18,12 +18,12 @@
    ```bash
     kubectl logs debug-app
    ```
-4. **Based on the pod's logs, try to fix the error by editing the exercise4.yaml file. after editing the file run the following:**
+4. **Based on the pod's logs, try to fix the error by editing the exercise3.yaml file. after editing the file run the following:**
    ```bash
     kubectl apply -f ./exercise3.yaml --force
    ```
-5. **Check the pod's status again (same command as in bullet 2) and verify that the pod is running**
-6. **Check the po's logs and verify the output is now valid**
+5. **Check the pod's status again and verify that the pod is running**
+6. **Check the pod's logs and verify the output is now valid**
 5. **Cleanup**
    ```bash
       kubectl delete -f ./exercise3.yaml
