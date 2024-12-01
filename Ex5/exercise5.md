@@ -1,6 +1,4 @@
-## 2. **Create a Failed Pod on Purpose**
-
-- **Task**: Create a deployment 
+## **Create a deployment **
 
 1. **Apply the manifest**
    ```bash

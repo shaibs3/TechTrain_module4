@@ -1,4 +1,4 @@
-## 1. **Create a Hello World Application in a Pod**
+## **Create a Hello World Application in a Pod**
 
 **setup**
    ```bash
