@@ -4,7 +4,7 @@
 
 1. **Apply the manifest**
    ```bash
-   cd ./Ex3
+   cd ../Ex5
    kubectl apply -f ./exercise5.md
    ```
 2. **Check the status of the deployment**
@@ -28,5 +28,5 @@
 7. **Describe the deployment again and verify the scaled event is in the event section**
 7. **Cleanup**
    ```bash
-      kubectl delete -f ./exercise4.yaml
+      kubectl delete -f ./exercise5.yaml
    ```

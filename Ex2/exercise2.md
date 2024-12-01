@@ -15,11 +15,12 @@
    ```bash
       kubectl describe pod <pod_name>
    ```
-4. Fix the issue by fixing the yaml file and running:
+4. **Fix the issue by fixing the yaml file and running:**
    ```bash
       kubectl apply -f ./exercise2.yaml
    ```
-5. **Cleanup**
+5. **Verify the pod is in running state**
+6. **Cleanup**
    ```bash
       kubectl delete -f ./exercise2.yaml
    ```

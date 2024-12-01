@@ -4,7 +4,7 @@
 
 1. **Apply the manifest**
    ```bash
-   cd ./TechTrain_module4/Ex5
+   cd ../Ex4
    kubectl apply -f ./exercise4.yaml
    ```
 
