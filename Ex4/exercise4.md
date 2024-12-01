@@ -5,6 +5,8 @@
 1. **Apply the manifest**
    ```bash
    cd ./Ex4
+   docker build -t debug-app:latest -f ./App
+   kind load docker-image debug-app:latest
    kubectl apply -f ./exercise4.md
    ```
 
